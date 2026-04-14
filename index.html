@@ -22,25 +22,50 @@
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
             <p>I'm a student in IT-incubator</p>
         <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-            <img src="img" alt="">
+            <img src="image.png" alt="strawberry">
     </section>
 
     <section data-cy="hw1-section-about-pre">
+        <select name="city">
+            <option>Grodno</option> 
+            <option>Minsk</option>
+            <option>Brest</option>
+        </select>
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
         <div data-cy="hw1-unordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
-
+            <h2>Favorite films</h2>
             <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
             <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
+                <ul>
+                    <li>"Shutter island"</li>
+                    <li>"Housemaid"</li>
+                    <li>"The Terminal"</li>
+                </ul>
         </div>
         <div data-cy="hw1-ordered-list-box-pre">
+            <h2>Favorite books</h2>
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
-
+            <ol>
+                <li>"1974"</li>
+                <li>"К себе нежно"</li>
+                <li>"Harry Potter"</li>
+            </ol>
             <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
         </div>
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
+            <h2>My skills</h2>
+            
+            <input type="checkbox" id="html" name="html" checked>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="JS" name="JS" checked>
+            <label for="JS">JS</label>
+            <input type="checkbox" id="CSS" name="CSS">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="React" name="React">
+            <label for="React">React</label>
+            
             <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
@@ -48,9 +73,33 @@
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <!-- 6) Создай здесь кнопку “Добавить” -->
+        <input type="text" placeholder="New skill">
+        <button>Add</button>
+        <hr>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
         
-        <table data-cy="hw-about-table-pre">
+        <table data-cy="hw-about-table-pre" border="1">
+            
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>TV</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mouse</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="2">Summa:</td>
+                <td>8</td>
+            </tr>
+        
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
@@ -59,6 +108,7 @@
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+            <a href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 </html>
